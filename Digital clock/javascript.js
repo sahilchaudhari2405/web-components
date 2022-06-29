@@ -19,8 +19,9 @@ function startTime() {
     s = checkTime(s);
 
     let am=h>=12?"PM":"AM";
-
-    document.getElementById('hours').innerHTML =  h+"<br><span>Hours</span>";
+        
+    // document.getElementById('hours').innerHTML =  h+"<br><span>Hours</span>"; //---> this for 24 hours clock 
+    document.getElementById('hours').innerHTML =  h-12+"<br><span>Hours</span>";//--> 12 hours clock;
     document.getElementById('minutes').innerHTML =  m+"<br><span>Minutes</span>";
     document.getElementById('seconds').innerHTML =  s+"<br><span>Seconds</span>";
     document.getElementById('ampm').innerHTML=am;
